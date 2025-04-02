@@ -12,15 +12,15 @@ window.onload = function() {
 };
 
 function generarDominios() {
-  let pronoun = ['the', 'our'];
-  let adj = ['great', 'big'];
-  let noun = ['jogger', 'racoon'];
+  let pronouns = ['the', 'our'];
+  let adjs = ['great', 'big'];
+  let nouns = ['jogger', 'racoon'];
   let dominios = [];
 
-  for (let pr = 0; pr < pronoun.length; pr++) {
-    for (let ad = 0; ad < adj.length; ad++) {
-      for (let nou = 0; nou < noun.length; nou++) {
-          dominios.push(pronoun[pr].concat(adj[ad]).concat(noun[nou]).concat(".com").concat("\n"))
+  for (let pronounPosition = 0; pronounPosition < pronouns.length; pronounPosition++) {
+    for (let adjPosition = 0; adjPosition < adjs.length; adjPosition++) {
+      for (let nounPosition = 0; nounPosition < nouns.length; nounPosition++) {
+          dominios.push(pronouns[pronounPosition].concat(adjs[adjPosition]).concat(nouns[nounPosition]).concat(".com").concat("\n"))
       }
     }
   }
